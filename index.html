@@ -64,6 +64,111 @@
                 </div>
             </div>
         </section>
+            <!-- ========================================== -->
+    <!-- SEÇÃO: DEPOIMENTOS -->
+    <!-- ========================================== -->
+    <section class="depoimentos" id="depoimentos">
+        <div class="container">
+            <h2>O que dizem os clientes</h2>
+            <p class="subtitle">Resultados reais de parceiros de negócios.</p>
+            
+            <div class="depoimentos-grid">
+                <!-- Depoimento 1 -->
+                <div class="card-depoimento">
+                    <div class="estrelas">⭐⭐⭐⭐⭐</div>
+                    <p class="texto-depoimento">"O Ricardo transformou meu site em uma máquina de vendas. Em 3 meses, aumentei meus leads em 150%!"</p>
+                    <div class="cliente-info">
+                        <div class="cliente-foto">JS</div> <!-- Pode trocar por uma tag <img> depois -->
+                        <div>
+                            <strong>João Silva</strong>
+                            <span>Dono de Pousada</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 2 -->
+                <div class="card-depoimento">
+                    <div class="estrelas">⭐⭐⭐⭐⭐</div>
+                    <p class="texto-depoimento">"Profissional excelente. Entendeu perfeitamente o que minha loja precisava e entregou antes do prazo."</p>
+                    <div class="cliente-info">
+                        <div class="cliente-foto">MF</div>
+                        <div>
+                            <strong>Maria Fernandes</strong>
+                            <span>E-commerce de Roupas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 3 -->
+                <div class="card-depoimento">
+                    <div class="estrelas">⭐⭐⭐⭐⭐</div>
+                    <p class="texto-depoimento">"O design ficou incrível e super rápido no celular. Nossos agendamentos pelo WhatsApp dobraram!"</p>
+                    <div class="cliente-info">
+                        <div class="cliente-foto">CP</div>
+                        <div>
+                            <strong>Carlos Pereira</strong>
+                            <span>Clínica Odontológica</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SEÇÃO: FORMULÁRIO DE CONTATO -->
+    <!-- ========================================== -->
+    <section class="contato" id="contato">
+        <div class="container">
+            <h2>Vamos Conversar Sobre Seu Projeto?</h2>
+            <p class="subtitle">Preencha os dados abaixo e te responderei no WhatsApp em instantes.</p>
+            
+            <!-- ATENÇÃO: Troque SEU_EMAIL_AQUI pelo seu email real -->
+            <form action="https://formsubmit.co/ricardoamorimsilva07@gmail.com" method="POST" id="form-contato" class="form-wrapper">
+                
+                <!-- Configurações ocultas do FormSubmit -->
+                <input type="hidden" name="_subject" value="Novo Lead do Site!">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                
+                <div class="input-group">
+                    <label for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                </div>
+
+                <div class="input-group">
+                    <label for="telefone">Telefone / WhatsApp</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+                </div>
+
+                <div class="input-group">
+                    <label for="tipo">Tipo de Projeto *</label>
+                    <select id="tipo" name="tipo" required>
+                        <option value="" disabled selected>Selecione uma opção...</option>
+                        <option value="Pousada/Hotel">Pousada / Hotel</option>
+                        <option value="Clínica/Saúde">Clínica / Saúde</option>
+                        <option value="Loja/E-commerce">Loja / E-commerce</option>
+                        <option value="Serviços Locais">Serviços Locais</option>
+                        <option value="Outro tipo de Comércio">Outro tipo de Comércio</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="mensagem">Conte-me sobre seu projeto...</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Como posso te ajudar a vender mais?"></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar para WhatsApp + Email</button>
+                <p class="privacidade">🔒 Privacidade: Seus dados nunca serão compartilhados.</p>
+            </form>
+        </div>
+    </section>
+
     </main>
     
     <footer>

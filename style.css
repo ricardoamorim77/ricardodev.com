@@ -426,3 +426,158 @@ footer {
     .footer-content { flex-direction: column; text-align: center; align-items: center; }
     .projeto-card { flex: 0 0 290px; }
 }
+/* ========================================== */
+/* ESTILOS: DEPOIMENTOS */
+/* ========================================== */
+.depoimentos {
+    padding: 5rem 0;
+    background-color: #f8f9fa; /* Troque pela cor de fundo do seu site se for dark mode */
+}
+
+.depoimentos h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.depoimentos .subtitle {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #666;
+}
+
+.depoimentos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card-depoimento {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid #eaeaea;
+}
+
+.estrelas {
+    margin-bottom: 1rem;
+}
+
+.texto-depoimento {
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.cliente-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cliente-foto {
+    width: 50px;
+    height: 50px;
+    background: #007bff; /* Cor primária */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.cliente-info strong {
+    display: block;
+    color: #111;
+}
+
+.cliente-info span {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+/* ========================================== */
+/* ESTILOS: FORMULÁRIO DE CONTATO */
+/* ========================================== */
+.contato {
+    padding: 5rem 0;
+}
+
+.contato h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.contato .subtitle {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #666;
+}
+
+.form-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    outline: none;
+    border-color: #007bff; /* Sua cor primária */
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 1rem;
+    background: #25D366; /* Cor do WhatsApp */
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 1rem;
+}
+
+.btn-enviar:hover {
+    background: #1ebc59;
+    transform: translateY(-2px);
+}
+
+.privacidade {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 1rem;
+}

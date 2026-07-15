@@ -99,3 +99,33 @@ VanillaTilt.init(document.querySelectorAll(".card, .servico-card"), {
     glare: true,
     "max-glare": 0.1
 });
+// ==========================================
+// LÓGICA DO FORMULÁRIO (EMAIL + WHATSAPP)
+// ==========================================
+document.addEventListener('DOMContentLoaded', function() {
+    const formContato = document.getElementById('form-contato');
+
+    if (formContato) {
+        formContato.addEventListener('submit', function(event) {
+            // Pegando os valores que o usuário digitou
+            const nome = document.getElementById('nome').value;
+            const tipo = document.getElementById('tipo').value;
+            const mensagem = document.getElementById('mensagem').value;
+
+            // O seu número de WhatsApp com o DDD (O mesmo que você já usa no flutuante)
+            const numeroWhatsApp = "5562994613564"; 
+
+            // Montando o texto que vai chegar no seu WhatsApp
+            const textoWhatsApp = `Olá Ricardo! Meu nome é ${nome}. Tenho interesse em um projeto para ${tipo}.\n\nDetalhes: ${mensagem}`;
+
+            // Criando o link do WhatsApp
+            const linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(textoWhatsApp)}`;
+
+            // Abre o WhatsApp em uma nova aba
+            window.open(linkWhatsApp, '_blank');
+
+            // Depois de abrir o WhatsApp, o formulário continua o processo padrão 
+            // e envia os dados para o seu email via FormSubmit.
+        });
+    }
+});
