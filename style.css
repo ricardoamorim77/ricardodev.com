@@ -581,3 +581,22 @@ footer {
     color: #888;
     margin-top: 1rem;
 }
+/* ========================================== */
+/* AJUSTE DO MENU PARA CELULAR */
+/* ========================================== */
+@media (max-width: 768px) {
+    header nav {
+        display: flex;
+        flex-direction: column; /* Coloca um embaixo do outro */
+        align-items: flex-end;  /* Mantém eles alinhados à direita */
+        gap: 8px; /* Dá um espacinho entre os links */
+    }
+    
+    /* Caso você use uma lista (ul) dentro do nav, o código é este abaixo: */
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 8px;
+    }
+}
